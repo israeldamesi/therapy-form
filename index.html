@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" type="text/css"/>
+    </head>
+    <body>
+        <h3>Occupational Therapy Form</h3>
+        <form>
+            <fieldset>
+              <legend>Personal Details</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br>
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age"><br>
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select><br>
+              <label for="number">Phone Number:</label>
+              <input type="tel" id="number" name="number"><br>
+              <label for="address">Address:</label>
+              <textarea id="address" name="address"></textarea>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Social Background</legend>
+              <label for="living">Who do you live with?</label>
+              <input type="text" id="living" name="living"><br>
+              <label for="marital">Marital Status:</label>
+              <select id="marital" name="marital">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+              </select><br>
+              <label for="children">Do you have children?</label>
+              <input type="radio" id="children-yes" name="children" value="yes">
+              <label for="children-yes">Yes</label>
+              <input type="radio" id="children-no" name="children" value="no">
+              <label for="children-no">No</label><br>
+              <label for="education">Level of Education:</label>
+              <input type="text" id="education" name="education"><br>
+              <label for="occupation">Occupation:</label>
+              <input type="text" id="occupation" name="occupation">
+            </fieldset>
+            
+            <fieldset>
+              <legend>Housing</legend>
+              <label for="stairs">Do you have stairs?</label>
+              <input type="radio" id="stairs-yes" name="stairs" value="yes">
+              <label for="stairs-yes">Yes</label>
+              <input type="radio" id="stairs-no" name="stairs" value="no">
+              <label for="stairs-no">No</label><br>
+              <label for="bathroom">What kind of bathroom do you have?</label>
+              <select id="bathroom" name="bathroom">
+                <option value="standard">Standard</option>
+                <option value="accessible">Accessible</option>
+                <option value="other">Other</option>
+              </select>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Medical History</legend>
+              <textarea id="medical" name="medical"></textarea>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Current Complaint</legend>
+              <label for="complaint">What brought you here?</label>
+              <textarea id="complaint" name="complaint"></textarea><br>
+              <label for="happened">What happened?</label>
+              <textarea id="happened" name="happened"></textarea><br>
+              <label for="struggling">What are you struggling with?</label>
+              <textarea id="struggling" name="struggling"></textarea><br>
+              </fieldset>
+
+                <fieldset>
+                  <legend>Past Daily Function</legend>
+                  <label for="adl">Activities of Daily Living:</label>
+                  <textarea id="adl" name="adl"></textarea><br>
+                  <label for="iadl">Instrumental Activities of Daily Living:</label>
+                  <textarea id="iadl" name="iadl"></textarea><br>
+                  <label for="work-study">Work/Study:</label>
+                  <input type="radio" id="work" name="work-study" value="work">
+                  <label for="work">Work</label>
+                  <input type="radio" id="study" name="work-study" value="study">
+                  <label for="study">Study</label><br>
+                  <label for="hobbies">Hobbies:</label>
+                  <textarea id="hobbies" name="hobbies"></textarea>
+                </fieldset>
+              
+                <fieldset>
+                  <legend>Assessment</legend>
+                  <label for="mobility">Mobility:</label>
+                  <select id="mobility" name="mobility">
+                    <option value="walking-free">Walking Free</option>
+                    <option value="wheelchair">Wheelchair</option>
+                    <option value="3-point-stick">3 Point Stick</option>
+                    <option value="1-point-stick">1 Point Stick</option>
+                    <option value="crutches">Crutches</option>
+                  </select><br>
+                  <label for="transfers">Transfers:</label>
+                  <select id="transfers" name="transfers">
+                    <option value="sit-to-stand">Sit to Stand</option>
+                    <option value="stand-to-sit">Stand to Sit</option>
+                    <option value="chair-to-bed">Chair to Bed</option>
+                    <option value="hand-dominance">Hand Dominance</option>
+                  </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Range Of Motion Assessment</legend>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Body Part</th>
+                        <th>Joint</th>
+                        <th>Active</th>
+                        <th>Passive</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="3">Shoulder</td>
+                        <td>Flexion</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>Extension</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>Abduction</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">Elbow</td>
+                        <td>Flexion</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>Extension</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">Wrist</td>
+                        <td>Flexion</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>Extension</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">Hip</td>
+                        <td>Flexion</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>Extension</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">Knee</td>
+                        <td>Flexion</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>Extension</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">Ankle</td>
+                        <td>Dorsiflexion</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>Plantar flexion</td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+                  
+                    <fieldset>
+                      <legend>Muscle Strength Test</legend>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Muscle Group</th>
+                            <th>Left Side</th>
+                            <th>Right Side</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Neck Flexion</td>
+                            <td><input type="number" id="neckFlexionLeft" name="neckFlexionLeft"></td>
+                            <td><input type="number" id="neckFlexionRight" name="neckFlexionRight"></td>
+                          </tr>
+                          <tr>
+                            <td>Shoulder Abduction</td>
+                            <td><input type="number" id="shoulderAbductionLeft" name="shoulderAbductionLeft"></td>
+                            <td><input type="number" id="shoulderAbductionRight" name="shoulderAbductionRight"></td>
+                          </tr>
+                          <tr>
+                            <td>Elbow Flexion</td>
+                            <td><input type="number" id="elbowFlexionLeft" name="elbowFlexionLeft"></td>
+                            <td><input type="number" id="elbowFlexionRight" name="elbowFlexionRight"></td>
+                          </tr>
+                          <tr>
+                            <td>Wrist Extension</td>
+                            <td><input type="number" id="wristExtensionLeft" name="wristExtensionLeft"></td>
+                            <td><input type="number" id="wristExtensionRight" name="wristExtensionRight"></td>
+                          </tr>
+                          <tr>
+                            <td>Hip Flexion</td>
+                            <td><input type="number" id="hipFlexionLeft" name="hipFlexionLeft"></td>
+                            <td><input type="number" id="hipFlexionRight" name="hipFlexionRight"></td>
+                          </tr>
+                          <tr>
+                            <td>Knee Extension</td>
+                            <td><input type="number" id="kneeExtensionLeft" name="kneeExtensionLeft"></td>
+                            <td><input type="number" id="kneeExtensionRight" name="kneeExtensionRight"></td>
+                          </tr>
+                          <tr>
+                            <td>Ankle Dorsiflexion</td>
+                            <td><input type="number" id="ankleDorsiflexionLeft" name="ankleDorsiflexionLeft"></td>
+                            <td><input type="number" id="ankleDorsiflexionRight" name="ankleDorsiflexionRight"></td>
+                          </tr>
+                          <tr>
+                            <td>Toes Extension</td>
+                            <td><input type="number" id="toesExtensionLeft" name="toesExtensionLeft"></td>
+                            <td><input type="number" id="toesExtensionRight" name="toesExtensionRight"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </fieldset>
+                  
+                    <fieldset>
+                        <legend>Sensation</legend>
+                        <label for="light">Light:</label>
+                        <textarea id="light" name="light"></textarea><br>
+                        <label for="deep">Deep/Proprioception:</label>
+                        <textarea id="deep" name="deep"></textarea><br>
+                        <label for="stereognosis">Stereognosis:</label>
+                        <textarea id="stereognosis" name="stereognosis"></textarea>
+                      </fieldset>
+                      
+                      <fieldset>
+                        <legend>Edema</legend>
+                        <label for="circumferance">Circumference of:</label>
+                        <textarea id="circumferance" name="circumferance"></textarea>
+                      </fieldset>
+
+                      <fieldset>
+                        <legend>Hand Function</legend>
+                        <label for="activity">Activity:</label>
+                        <textarea id="activity" name="activity"></textarea>
+                      </fieldset>
+                      
+                      <fieldset>
+                        <legend>Current Daily Function</legend>
+                        <label for="bathing">Bathing:</label>
+                        <textarea id="bathing" name="bathing"></textarea><br>
+                        <label for="toileting">Toileting:</label>
+                        <textarea id="toileting" name="toileting"></textarea><br>
+                        <label for="dressing">Dressing:</label>
+                        <textarea id="dressing" name="dressing"></textarea><br>
+                        <label for="eating">Eating and Drinking:</label>
+                        <textarea id="eating" name="eating"></textarea><br>
+                        <label for="shopping">Shopping:</label>
+                        <textarea id="shopping" name="shopping"></textarea><br>
+                        <label for="cooking">Cooking:</label>
+                        <textarea id="cooking" name="cooking"></textarea><br>
+                        <label for="household">Household:</label>
+                        <textarea id="household" name="household"></textarea><br>
+                        <label for="childcare">Care for a Child:</label>
+                        <textarea id="childcare" name="childcare"></textarea><br>
+                        <label for="transport">Transport:</label>
+                        <textarea id="transport" name="transport"></textarea><br>
+                        <label for="medications">Medications:</label>
+                        <textarea id="medications" name="medications"></textarea><br>
+                        <label for="resumed">Resumed Work or School?</label>
+                        <input type="radio" id="resumed-yes" name="resumed" value="yes">
+                        <label for="resumed-yes">Yes</label>
+                        <input type="radio" id="resumed-no" name="resumed" value="no">
+                        <label for="resumed-no">No</label><br>
+                      </fieldset>
+                      
+                      <fieldset>
+                        <legend>Cognitive Impression</legend>
+                        <label for="orientation">Orientation:</label>
+                        <textarea id="orientation" name="orientation"></textarea><br>
+                        <label for="knowledge">General Knowledge:</label>
+                        <textarea id="knowledge" name="knowledge"></textarea>
+                      </fieldset>
+                      
+                      <fieldset>
+                        <legend>Treatment Plan</legend>
+                        <label for="long-term">Long Term Goals:</label>
+                        <textarea id="long-term" name="long-term"></textarea><br>
+                        <label for="short-term">Short Term Goals:</label>
+                        <textarea id="short-term" name="short-term"></textarea>
+                      </fieldset>
+                      
+                      <input type="submit" value="Submit">
+                  
+              </form>
+              
+    </body>
+</html>
+
